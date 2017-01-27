@@ -1,5 +1,7 @@
-# SKI: Sense Key Index (c) 2017 Eric Kafe, License: CC BY 4.0
+# SKI: Sense Key Index (c) 2017 Eric Kafe
 Sense Key Index for inter-operability between WordNet-related projects
+
+License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 
 
 1. Introduction
