@@ -1,0 +1,19 @@
+#!/bin/bash
+# ili2map (c) 2017 Eric Kafe
+# license CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+db=ski-pwn
+
+#ILI file:
+v=30
+ilif=ski-ili$v.txt
+gunzip $ilif.gz
+
+echo Running pwn2flat, to produce the needed ski-pwn-flat.txt file
+`pwd`/pwn2flat
+
+echo Map ILI ids to all Princeton WordNet versions:
+join ski-ili$v.txt $db-flat.txt|awk '{print$2,$3}'|sort -k1,1 > $db-ili-map.txt
+
+echo Map ILI ids to their last known Princeton WordNet versions:
+join ski-ili$v.txt $db-last.txt|awk '{print$2,$3}'|sort -k1,1 > $db-ili-last.txt
