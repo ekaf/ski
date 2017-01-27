@@ -16,7 +16,7 @@ awk '$0!~"^\\#"{
 # Map this sense key to this synset id:
       print $1,a[i] > db "-flat.txt"
 # The same, in Prolog format (uncomment next line):
-#      printf "%s(\"%s\",\"%s\").\n", db, $1,a[i] > db "-flat.pl"
+#      printf "%s(\047%s\047,\047%s\047).\n", db, $1,a[i] > db "-flat.pl"
       }
 # Additionally, produce a mapping to the last known
 # WordNet version that included this sense key:
