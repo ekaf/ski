@@ -78,7 +78,8 @@ different versions of the original Princeton WordNet distribution.
 
 3.3 Output files
 
-The "output" directory contains compressed output from the SKI-tools:
+For your convenience, this release also includes all the output produced
+by running the SKI-tools, compressed with gzip:
 
 - ski-flat.tar.gz: the flat text version of ski-pwn-sets.txt
 - ski-freeling.tar.gz: senses30.src databases for Freeling
