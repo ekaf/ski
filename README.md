@@ -57,6 +57,8 @@ different versions of the original Princeton WordNet distribution.
 
 3.2 SKI tools
 
+First type "make all" to set executable permissions for these bash scripts:
+
 - pwn2maps
     Generates synset offset mappings between all the WordNet versions
     from ski-pwn-sets.txt
