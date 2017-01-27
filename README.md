@@ -20,7 +20,7 @@ different versions of WordNet.
 
 Princeton WordNet (PWN) includes a sense key index (the index.sense
 file) since version 1.4 from 1993, but the implementation of
-sense keys first became coherent in 1993, with WordNet version 1.5.
+sense keys first became coherent in 1995, with WordNet version 1.5.
 
 Thus, we can define the full PWN sense key index as the unique
 concatenation of all the coherent index.sense files (currently
