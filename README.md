@@ -1,6 +1,5 @@
-# SKI: Sense Key Index (c) 2017 Eric Kafe
+# SKI: Sense Key Index (c) 2017 Eric Kafe, License: MIT
 Sense Key Index for inter-operability betwween WordNet-related projects
-License CC-BY-4.0
 
 
 1. Introduction
@@ -26,7 +25,7 @@ concatenation of all the coherent index.sense files from the
 different versions of the original Princeton WordNet distribution.
 
 
-2. The Sense Key Index can be used to:
+2. The Sense Key Index can be used to
 
   - Generate database components in various formats (text, prolog, rdf),
     to interface with any WordNet-related project: the GWA grid, OMW, 
@@ -39,7 +38,7 @@ different versions of the original Princeton WordNet distribution.
   - and more forthcoming...
 
 
-3. Included files
+3 Included files:
 
 3.1 SKI databases
 
@@ -73,7 +72,7 @@ different versions of the original Princeton WordNet distribution.
     Maps ILI-30 ids to all Princeton WordNet versions
     Maps ILI-30 ids to their last known Princeton WordNet version
 
--mcr2free
+- mcr2free
     Generates Freeling sense databases from MCR data
 
 
