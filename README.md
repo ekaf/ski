@@ -86,6 +86,7 @@ For your convenience, this release also includes all the output produced
 by running the SKI-tools, compressed with gzip:
 
 - ski-flat.tar.gz: the flat text version of ski-pwn-sets.txt
+- ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation
 - ski-freeling.tar.gz: senses30.src databases for Freeling
 - ski-ili.tar.gz: ILI mappings
 - ski-mappings.tar.gz: PWN mappings
