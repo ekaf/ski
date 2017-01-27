@@ -1,4 +1,4 @@
-# SKI: Sense Key Index (c) 2017 Eric Kafe, License: MIT
+# SKI: Sense Key Index (c) 2017 Eric Kafe, License: CC BY 4.0
 Sense Key Index for inter-operability between WordNet-related projects
 
 
