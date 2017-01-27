@@ -1,5 +1,5 @@
 # SKI: Sense Key Index (c) 2017 Eric Kafe, License: MIT
-Sense Key Index for inter-operability betwween WordNet-related projects
+Sense Key Index for inter-operability between WordNet-related projects
 
 
 1. Introduction
