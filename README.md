@@ -19,12 +19,13 @@ inter-operation between semantic web applications that rely on
 different versions of WordNet.
 
 Princeton WordNet (PWN) includes a sense key index (the index.sense
-file) since version 1.3, but the implementation of sense keys became
-first coherent in WordNet version 1.5.
+file) since version 1.4 from 1993, but the implementation of
+sense keys first became coherent in 1993, with WordNet version 1.5.
 
 Thus, we can define the full PWN sense key index as the unique
-concatenation of all the coherent index.sense files from the
-different versions of the original Princeton WordNet distribution.
+concatenation of all the coherent index.sense files (currently
+1.5 up to 3.1) from the different versions of the original
+Princeton WordNet distribution.
 
 
 2. The Sense Key Index can be used to
