@@ -2,23 +2,8 @@
 # pwn2flat (c) 2017 Eric Kafe
 # license CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 
-echo Flat text relation between all synsets in all WordNet versions and their sense keys
-
 db=ski-pwn
+dbp=`echo -n $db|tr -d "-"`
 
-cat $db-sets.txt.gz|
-gunzip|
-awk '$0!~"^\\#"{
-# For each sense key, split its corresponding set of synset identifiers:
-    z=split($2,a,",")
-# For each synset id:
-    for(i=1;i<=z;i++){
-# Map this sense key to this synset id:
-      print $1,a[i] > db "-flat.txt"
-# The same, in Prolog format (uncomment next line):
-#      printf "%s(\047%s\047,\047%s\047).\n", db, $1,a[i] > db "-flat.pl"
-      }
-# Additionally, produce a mapping to the last known
-# WordNet version that included this sense key:
-    print $1,a[z] > db "-last.txt"
-}' db=$db > $db-flat.txt
+echo Flat text relation between all synsets in all WordNet versions and their sense keys
+cat $db-sets.txt.gz|gunzip|awk -f pwn2flat.awk db=$db dbp=$dbp > $db-flat.txt
