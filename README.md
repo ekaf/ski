@@ -30,11 +30,11 @@ Princeton WordNet distribution.
 
 2. The Sense Key Index can be used to
 
-  - Generate database components in various formats (text, prolog, rdf),
-    to interface with any WordNet-related project: the GWA grid, OMW, 
-    WN-ontology, ILI, MCR, Freeling, etc...
-  - Produce mapping between all WordNet versions
-  - Map version-bound WordNet resources like the ILI or the MCR
+  - Generate database components in various formats (text, tab, csv,
+    prolog, rdf), to interface with any WordNet-related project: 
+    the GWA grid, OMW, WN-ontology, ILI, MCR, Freeling, etc...
+  - Produce mappings between all WordNet versions
+  - Map version-limited WordNet resources like the ILI or the MCR
     to other WordNet versions
   - Produce statistics about the permanence of sense keys or ILI
     identifiers across WordNet versions
@@ -86,8 +86,10 @@ First type "make all" to set executable permissions for these bash scripts:
 For your convenience, this release also includes all the output produced
 by running the SKI-tools, compressed with gzip:
 
-- ski-flat.tar.gz: the flat text version of ski-pwn-sets.txt
-- ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation
+- ski-pwn-flat.txt.gz: the flat text version of ski-pwn-sets.txt
+- ski-pwn-flat.tab.gz: the same, as tab-separated 4-tuples
+- ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
+- ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
 - ski-freeling.tar.gz: senses30.src databases for Freeling
 - ski-ili.tar.gz: ILI mappings
 - ski-mappings.tar.gz: PWN mappings
