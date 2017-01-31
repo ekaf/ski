@@ -13,6 +13,8 @@ $0!~"^\\#"{
     for(i=1;i<=z;i++){
 # Map this sense key to this synset id:
       print $1,a[i] > db "-flat.txt"
+# The same, inversed: map from synset id to sense key
+      print a[i], $1 |"sort -k1,1>" db "-iflat.txt"
 # Split synset id (wn version, pos, synset offset)
       split(a[i],b,":")
 # Output tab-separated 4-tuples:
