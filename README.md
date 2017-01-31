@@ -67,11 +67,15 @@ First type "make all" to set executable permissions for these bash scripts:
     from ski-pwn-sets.txt
 
 - pwn2flat
-    Generates the flat text relation between all synsets
-    in all WordNet versions and their sense keys. 
-    Optionally, output this relation in Prolog format.
+    Generates the flat text relation file "ski-pwn-flat.txt",
+    between all synsets in all WordNet versions and their sense keys,
+    and the inverse relation (ski-pwn-iflat.txt).
+    Also, outputs this relation as tab-separated 4-tuples (ski-pwn-flat.tab),
+    designed for compatibility with the MCR.
+    Also, outputs this relation in Prolog format (ski-pwn-flat.pl),
+    designed for compatibility with the Prolog version of PWN.
     Additionally, produce a mapping from each sense key
-    to its last known WordNet version
+    to its last known WordNet version (ski-pwn-last).
 
 - ili2map
     (runs "pwn2flat" first, to generate the needed ski-pwn-flat.txt
@@ -89,7 +93,8 @@ For your convenience, this release also includes all the output produced
 by running the SKI-tools, compressed with gzip:
 
 - ski-pwn-flat.txt.gz: the flat text version of ski-pwn-sets.txt
-- ski-pwn-flat.tab.gz: the same, as tab-separated 4-tuples
+- ski-pwn-iflat.txt.gz: the same, inversed: map from synsets to sense keys
+- ski-pwn-flat.tab.gz: pwn-flat as tab-separated 4-tuples
 - ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
 - ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
 - ski-freeling.tar.gz: senses30.src databases for Freeling
