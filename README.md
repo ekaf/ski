@@ -48,14 +48,21 @@ Princeton WordNet distribution.
 3.1 SKI databases
 
 - ski-pwn-sets.txt
-    sense key index for all the coherent Princeton WordNet versions
-    (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0 and 3.1)
+    sense key index for all the modern Princeton WordNet versions
+    (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0 and 3.1),
+    derived from the corresponding Princeton WordNet "index.sense" files,
+    retrieved from http://wordnetcode.princeton.edu
 
 - ski-mcr30-2016.txt 
-    sense key index for MCR30-2016
+    sense key index for MCR30-2016, derived by joining the inverse SKI
+    (ski-pwn-iflat.txt) with the latest MCR "variant" files, retrieved
+    from http://adimen.si.ehu.es/web/MCR
 
 - ski-ili30.txt
-    sense key index for ILI30
+    sense key index for ILI30, derived by joining the inverse SKI
+    (ski-pwn-iflat.txt) with the GWA-ILI "ili-map-pwn30.tab" file
+    retrieved from https://github.com/globalwordnet/ili
+
 
 
 3.2 SKI tools
@@ -100,3 +107,11 @@ by running the SKI-tools, compressed with gzip:
 - ski-freeling.tar.gz: senses30.src databases for Freeling
 - ski-ili.tar.gz: ILI mappings
 - ski-mappings.tar.gz: PWN mappings
+
+
+4 References
+
+Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central
+Repository version 3.0: upgrading a very large lexical knowledge
+base. In Proceedings of the Sixth International Global WordNet
+Conference (GWC=E2=80=9912). Matsue, Japan. January, 2012.
