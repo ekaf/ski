@@ -114,4 +114,4 @@ by running the SKI-tools, compressed with gzip:
 Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central
 Repository version 3.0: upgrading a very large lexical knowledge
 base. In Proceedings of the Sixth International Global WordNet
-Conference (GWC=E2=80=9912). Matsue, Japan. January, 2012.
+Conference (GWC 2012). Matsue, Japan. January, 2012.
