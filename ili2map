@@ -8,14 +8,23 @@ db=ski-pwn
 v=30
 iliz=ski-ili$v.txt.gz
 
-if [ ! -f ski-pwn-flat.txt ]
+if [ ! -f $db-flat.txt ]
 then
-echo Running pwn2flat, to produce the needed ski-pwn-flat.txt file
+echo Running pwn2flat, to produce the needed $db-flat.txt file
 `pwd`/pwn2flat
 fi
 
 echo Map ILI ids to all Princeton WordNet versions:
-cat $iliz|gunzip|join - $db-flat.txt|awk '{print$2,$3}'|sort -u|sort -k1,1 > $db-ili-map.txt
-
-echo Map ILI ids to their last known Princeton WordNet versions:
-cat $iliz|gunzip|join - $db-last.txt|awk '{print$2,$3}'|sort -u|sort -k1,1 > $db-ili-last.txt
+cat $iliz|
+gunzip|
+join - $db-flat.txt|
+awk '{print$2,$3}'|
+sort -u|
+sort -k1,1|
+tee $db-ili-map.txt|
+awk '{a[$1]=$2}
+END{
+#Map ILI ids to their last known Princeton WordNet version:
+for(x in a)print x,a[x]
+}'|
+sort -k1,1 > $db-ili-last.txt
