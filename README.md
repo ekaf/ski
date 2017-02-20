@@ -55,12 +55,12 @@ Princeton WordNet distribution.
 
 - ski-mcr30-2016.txt 
     sense key index for MCR30-2016, derived by joining the inverse SKI
-    (ski-pwn-iflat.txt) with the latest MCR "variant" files, retrieved
+    (ski-pwn-si-flat.txt) with the latest MCR "variant" files, retrieved
     from http://adimen.si.ehu.es/web/MCR
 
 - ski-ili30.txt
     sense key index for ILI30, derived by joining the inverse SKI
-    (ski-pwn-iflat.txt) with the GWA-ILI "ili-map-pwn30.tab" file
+    (ski-pwn-si-flat.txt) with the GWA-ILI "ili-map-pwn30.tab" file
     retrieved from https://github.com/globalwordnet/ili
 
 
@@ -76,7 +76,7 @@ First type "make all" to set executable permissions for these bash scripts:
 - pwn2flat
     Generates the flat text relation file "ski-pwn-flat.txt",
     between all synsets in all WordNet versions and their sense keys,
-    and the inverse relation (ski-pwn-iflat.txt).
+    and the inverse relation (ski-pwn-si-flat.txt, and ski-pwn-si-sets.txt).
     Also, outputs this relation as tab-separated 4-tuples (ski-pwn-flat.tab),
     designed for compatibility with the MCR.
     Also, outputs this relation in Prolog format (ski-pwn-flat.pl),
@@ -100,7 +100,8 @@ For your convenience, this release also includes all the output produced
 by running the SKI-tools, compressed with gzip:
 
 - ski-pwn-flat.txt.gz: the flat text version of ski-pwn-sets.txt
-- ski-pwn-iflat.txt.gz: the same, inversed: map from synsets to sense keys
+- ski-pwn-si-flat.txt.gz: the same, inversed: map from synsets to sense keys
+- ski-pwn-si-sets.txt.gz: the previous, as sets: map from synsets to sets of sense keys
 - ski-pwn-flat.tab.gz: pwn-flat as tab-separated 4-tuples
 - ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
 - ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
@@ -114,4 +115,4 @@ by running the SKI-tools, compressed with gzip:
 Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central
 Repository version 3.0: upgrading a very large lexical knowledge
 base. In Proceedings of the Sixth International Global WordNet
-Conference (GWC 2012). Matsue, Japan. January, 2012.
+Conference (GWC=E2=80=9912). Matsue, Japan. January, 2012.

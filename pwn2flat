@@ -5,5 +5,5 @@
 db=ski-pwn
 dbp=`echo -n $db|tr -d "-"`
 
-echo Flat text relation between all synsets in all WordNet versions and their sense keys
+echo Extracting databases, this may take a few minutes...
 cat $db-sets.txt.gz|gunzip|awk -f pwn2flat.awk db=$db dbp=$dbp > $db-flat.txt
