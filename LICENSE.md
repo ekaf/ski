@@ -1,4 +1,6 @@
 Sense Key Index (SKI)
+https://github.com/ekaf/ski/
+
 (c) 2017 Eric Kafe
 
 License CC BY 4.0
