@@ -1,4 +1,4 @@
-# mcr2free.awk (c) 2017 Eric Kafe
+# https://github.com/ekaf/ski/mcr2free.awk (c) 2017 Eric Kafe
 # license CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 {
   split($1,a,"#")

@@ -4,6 +4,11 @@ Sense Key Index for inter-operability between WordNet-related projects
 License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 
 
+0. Pre-release version
+
+Ongoing work, please see the CHANGES.md file.
+
+
 1. Introduction
 
 According to WordNet's "senseidx" manual page:

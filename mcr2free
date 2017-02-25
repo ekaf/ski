@@ -1,6 +1,8 @@
 #!/bin/bash
-# mcr2free (c) 2017 Eric Kafe
-# license CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+# https://github.com/ekaf/ski/mcr2free
+# (c)2017 Eric Kafe, CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+LC_ALL=C
 
 # MCR version:
 v=30

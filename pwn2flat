@@ -1,6 +1,8 @@
 #!/bin/bash
-# pwn2flat (c) 2017 Eric Kafe
-# license CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+# https://github.com/ekaf/ski/pwn2flat
+# (c)2017 Eric Kafe, CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+LC_ALL=C
 
 db=ski-pwn
 dbp=`echo -n $db|tr -d "-"`
