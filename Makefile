@@ -3,4 +3,4 @@
 
 all:
 	@echo Setting executable permissions
-	@chmod a+x ili2map mcr2free pwn2flat pwn2maps
+	@chmod a+x ili2map mcr2free pwn2flat pwn2maps wn2ski
