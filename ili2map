@@ -22,7 +22,7 @@ gunzip|
 join - $db-flat.txt|
 awk '{print$2,$3}'|
 sort -u|
-sort -k1,1|
+sort -t: -k1,1|
 tee $db-ili-map.txt|
 awk '{a[$1]=$2}
 END{

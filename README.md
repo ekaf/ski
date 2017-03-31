@@ -4,10 +4,8 @@ Sense Key Index for inter-operability between WordNet-related projects
 License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 
 
-0. Pre-release version
-
-Ongoing work, please see the CHANGES.md file.
-
+Ongoing work:
+This is a pre-release version, please see the CHANGES.md file.
 
 1. Introduction
 
@@ -73,6 +71,16 @@ Princeton WordNet distribution.
 3.2 SKI tools
 
 First type "make all" to set executable permissions for these bash scripts:
+
+- wn2ski
+    Builds the SKI from the original WordNetindex.sense files,
+    retrieved from http://wordnetcode.princeton.edu.
+    These files are expected to be found in local subdirectories
+    named dict-WordnetVersion.Number.
+    The latest (2012) WordNet version, retrieved from
+    http://wordnetcode.princeton.edu/wn_for_sql.tar.gz
+    is an unnumbered update of WordNet 3.1, so here
+    we call it 3.1.1.
 
 - pwn2maps
     Generates synset offset mappings between all the WordNet versions

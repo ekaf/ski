@@ -3,7 +3,7 @@
 
 # Produce synset mappings between all Princeton WordNet versions 
 
-{
+$0!~"^\\#"{
 # For each synset key, split its set of synset ids:
   z=split($2,a,",")
 # Map from each synset id
