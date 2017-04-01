@@ -29,7 +29,7 @@ and has remained stable since then.
 Thus, we can define the full PWN sense key index as the unique
 concatenation of all the stable index.sense files, with an
 extra field indicating the WordNet version mumber (currently
-1.5 up to 3.1) from the different versions of the original
+1.5 up to 3.1.1) from the different versions of the original
 Princeton WordNet distribution.
 
 
@@ -52,7 +52,7 @@ Princeton WordNet distribution.
 
 - ski-pwn-sets.txt
     sense key index for all the modern Princeton WordNet versions
-    (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0 and 3.1),
+    (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0, 3.1 and 3.1.1),
     derived from the corresponding Princeton WordNet "index.sense" files,
     retrieved from http://wordnetcode.princeton.edu
 
@@ -73,14 +73,12 @@ Princeton WordNet distribution.
 First type "make all" to set executable permissions for these bash scripts:
 
 - wn2ski
-    Builds the SKI from the original WordNetindex.sense files,
-    retrieved from http://wordnetcode.princeton.edu.
-    These files are expected to be found in local subdirectories
-    named dict-WordnetVersion.Number.
-    The latest (2012) WordNet version, retrieved from
-    http://wordnetcode.princeton.edu/wn_for_sql.tar.gz
-    is an unnumbered update of WordNet 3.1, so here
-    we call it 3.1.1.
+    Builds the Sense Key Index from the original WordNet  files,
+    retrieved from http://wordnetcode.princeton.edu. These files are expected
+    to be found in local subdirectories named dict-WordnetVersion.Number,
+    ranging from dict-1.5/index.sense up to dict-3.1.1/index.sense.
+    The latest WordNet version, WordNet 3.1.1 for SQL (2012)was retrieved
+    from http://wordnetcode.princeton.edu/wn_for_sql.tar.gz.
 
 - pwn2maps
     Generates synset offset mappings between all the WordNet versions
@@ -120,7 +118,8 @@ by running the SKI-tools, compressed with gzip:
 - ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
 - ski-freeling.tar.gz: senses30.src databases for Freeling
 - ski-ili.tar.gz: ILI mappings
-- ski-mappings.tar.gz: PWN mappings
+- ski-mappings-pwn1.tar.gz: mappings from PWN versions 1.x to all later versions
+- ski-mappings-pwn2.tar.gz: mappings from PWN versions 2.x and 3.x to all later versions
 
 
 4 References
