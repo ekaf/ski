@@ -1,3 +1,8 @@
+Changed WordNet 1.5 to cover the Windows release
+from March 1995 (instead of the later Unix release
+from October 1995), since it is the version used by 
+other projects (Sensemap, UPC, ILI).
+
 Added WordNet 3.1.1 for SQL (2012), retrieved from
 http://wordnetcode.princeton.edu/wn_for_sql.tar.gz.
 
