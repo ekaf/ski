@@ -1,7 +1,12 @@
-Changed WordNet 1.5 to cover the Windows release
-from March 1995 (instead of the later Unix release
-from October 1995), since it is the version used by 
-other projects (Sensemap, UPC, ILI).
+Corrected the version name of the WordNet 1.5SC release
+from October 1995. This was the first fully "coherent"
+version, with only unique sense keys.
+
+WordNet 1.5 now refers to the release from March 1995,
+instead of the later WN 1.5SC, since it is the version
+used by other projects (Sensemap, UPC, ILI). Please note
+that a few sense keys from WN 1.5 were not unique,
+as almost 40 were in more than one synset.
 
 Added WordNet 3.1.1 for SQL (2012), retrieved from
 http://wordnetcode.princeton.edu/wn_for_sql.tar.gz.

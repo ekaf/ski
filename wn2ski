@@ -14,6 +14,6 @@ echo Building Sense Key Index, this may take a few minutes...
 # Version 3.1.1 is "Wordnet for SQL", retrieved from
 # http://wordnetcode.princeton.edu/wn_for_sql.tar.gz
 
-awk -f wn2ski.awk In/dict-{1.5,1.6,1.7,1.7.1,2.0,2.1,3.0,3.1,3.1.1}/index.sense|\
+awk -f wn2ski.awk In/dict-{1.5,1.5sc,1.6,1.7,1.7.1,2.0,2.1,3.0,3.1,3.1.1}/index.sense|\
 sort -k1,1|
 gzip > $db-sets.txt.gz
