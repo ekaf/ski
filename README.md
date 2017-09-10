@@ -123,9 +123,8 @@ by running the SKI-tools, compressed with gzip:
 upgrading a very large lexical knowledge base. In: Proceedings of the Sixth
 International Global WordNet Conference (GWC2012). Matsue, Japan, 2012.
 
-* Kafe E.: _How Stable are WordNet Synsets?_.
+* Kafe E.: [_How Stable are WordNet Synsets?_](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf).
 In: Proceedings of the LDK 2017 Workshops: OntoLex, TIAD and Challenges for Wordnets.
-Galway, Ireland, 2017. [PDF](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf)
+Galway, Ireland, 2017.
 
-* WordNet-team: Senseidx(5wn) manual page. In: WordNet manual. Princeton University, 2010.
-[HTML](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html)
+* WordNet-team: [_Senseidx(5wn) manual page_](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html). In: WordNet manual. Princeton University, 2010.
