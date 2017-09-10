@@ -55,7 +55,7 @@ Princeton WordNet distribution.
 * _ski-mcr30-2016.txt_
 >  sense key index for MCR30-2016, derived by joining the inverse SKI
 >  (_ski-pwn-si-flat.txt_) with the latest MCR "_variant_" files, retrieved
->  from [MCR](http://adimen.si.ehu.es/web/MCR)
+>  from the [MCR](http://adimen.si.ehu.es/web/MCR)
 
 * _ski-ili30.txt_
 >  sense key index for ILI30, derived by joining the inverse SKI
@@ -123,8 +123,8 @@ by running the SKI-tools, compressed with gzip:
 upgrading a very large lexical knowledge base. In: Proceedings of the Sixth
 International Global WordNet Conference (GWC2012). Matsue, Japan, 2012.
 
-* Kafe E.: [_How Stable are WordNet Synsets?_](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf).
+* Kafe, E.: [_How Stable are WordNet Synsets?_](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf).
 In: Proceedings of the LDK 2017 Workshops: OntoLex, TIAD and Challenges for Wordnets.
 Galway, Ireland, 2017.
 
-* WordNet-team: [_Senseidx(5wn) manual page_](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html). In: WordNet manual. Princeton University, 2010.
+* WordNet-team: [_Senseidx(5wn)_](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html). In: WordNet manual. Princeton University, 2010.
