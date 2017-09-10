@@ -1,21 +1,19 @@
-# SKI: Sense Key Index (c) 2017 Eric Kafe
-Sense Key Index for inter-operability between WordNet-related projects
+# Sense Key Index (SKI) for inter-operability between WordNet-related projects
 
-License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
+2017 [Eric Kafe](https://github.com/ekaf)
 
+Ongoing work: This is a pre-release version, please see the CHANGES.md file.
 
-Ongoing work:
-This is a pre-release version, please see the CHANGES.md file.
-
-1. Introduction
+## 1. Introduction
 
 According to WordNet's "senseidx" manual page:
 
-    A sense_key is the best way to represent a sense
-    in semantic tagging or other systems that refer to
-    WordNet senses. sense_keys are independent of WordNet
-    sense numbers and synset_offsets, which vary between
-    versions of the database.
+>  A sense_key is the best way to represent a sense
+>  in semantic tagging or other systems that refer to
+>  WordNet senses. sense_keys are independent of WordNet
+>  sense numbers and synset_offsets, which vary between
+>  versions of the database.
 
 As a consequence, sense keys provide a stable basis for the
 inter-operation between semantic web applications that rely on
@@ -33,98 +31,101 @@ extra field indicating the WordNet version mumber (currently
 Princeton WordNet distribution.
 
 
-2. The Sense Key Index can be used to
+## 2. The Sense Key Index can be used to
 
-  - Generate database components in various formats (text, tab, csv,
-    prolog, rdf), to interface with any WordNet-related project: 
-    the GWA grid, OMW, WN-ontology, ILI, MCR, Freeling, etc...
-  - Produce mappings between all WordNet versions
-  - Map version-limited WordNet resources like the ILI or the MCR
-    to other WordNet versions
-  - Produce statistics about the permanence of sense keys or ILI
-    identifiers across WordNet versions
-  - and more forthcoming...
+* Generate database components in various formats (text, tab, csv,
+  prolog, rdf), to interface with any WordNet-related project: 
+  the GWA grid, OMW, WN-ontology, ILI, MCR, Freeling, etc...
+* Produce mappings between all WordNet versions
+* Map version-limited WordNet resources like the ILI or the MCR to other WordNet versions
+* Produce statistics about the permanence of sense keys or ILI identifiers across WordNet versions
+* and more forthcoming...
 
 
-3 Included files:
+## 3. Included files
 
-3.1 SKI databases
+### 3.1 SKI databases
 
-- ski-pwn-sets.txt
-    sense key index for all the modern Princeton WordNet versions
-    (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0, 3.1 and 3.1.1),
-    derived from the corresponding Princeton WordNet "index.sense" files,
-    retrieved from http://wordnetcode.princeton.edu
+* _ski-pwn-sets.txt_
+>  sense key index for all the modern Princeton WordNet versions
+>  (currently 1.5, 1.6, 1.7, 1.7.1, 2.0, 2.1, 3.0, 3.1 and 3.1.1),
+>  derived from the corresponding Princeton WordNet _index.sense_ files,
+>  retrieved from [Wordnetcode](http://wordnetcode.princeton.edu)
 
-- ski-mcr30-2016.txt 
-    sense key index for MCR30-2016, derived by joining the inverse SKI
-    (ski-pwn-si-flat.txt) with the latest MCR "variant" files, retrieved
-    from http://adimen.si.ehu.es/web/MCR
+* _ski-mcr30-2016.txt_
+>  sense key index for MCR30-2016, derived by joining the inverse SKI
+>  (_ski-pwn-si-flat.txt_) with the latest MCR "_variant_" files, retrieved
+>  from [MCR](http://adimen.si.ehu.es/web/MCR)
 
-- ski-ili30.txt
-    sense key index for ILI30, derived by joining the inverse SKI
-    (ski-pwn-si-flat.txt) with the GWA-ILI "ili-map-pwn30.tab" file
-    retrieved from https://github.com/globalwordnet/ili
-
-
-
-3.2 SKI tools
-
-First type "make all" to set executable permissions for these bash scripts:
-
-- wn2ski
-    Builds the Sense Key Index from the original WordNet  files,
-    retrieved from http://wordnetcode.princeton.edu. These files are expected
-    to be found in local subdirectories named dict-WordnetVersion.Number,
-    ranging from dict-1.5/index.sense up to dict-3.1.1/index.sense.
-    The latest WordNet version, WordNet 3.1.1 for SQL (2012)was retrieved
-    from http://wordnetcode.princeton.edu/wn_for_sql.tar.gz.
-
-- pwn2maps
-    Generates synset offset mappings between all the WordNet versions
-    from ski-pwn-sets.txt
-
-- pwn2flat
-    Generates the flat text relation file "ski-pwn-flat.txt",
-    between all synsets in all WordNet versions and their sense keys,
-    and the inverse relation (ski-pwn-si-flat.txt, and ski-pwn-si-sets.txt).
-    Also, outputs this relation as tab-separated 4-tuples (ski-pwn-flat.tab),
-    designed for compatibility with the MCR.
-    Also, outputs this relation in Prolog format (ski-pwn-flat.pl),
-    designed for compatibility with the Prolog version of PWN.
-    Additionally, produce a mapping from each sense key
-    to its last known WordNet version (ski-pwn-last).
-
-- ili2map
-    (runs "pwn2flat" first, to generate the needed ski-pwn-flat.txt
-    and ski-pwn-last.txt databases)
-    Maps ILI-30 ids to all Princeton WordNet versions
-    Maps ILI-30 ids to their last known Princeton WordNet version
-
-- mcr2free
-    Generates Freeling sense databases from MCR data
+* _ski-ili30.txt_
+>  sense key index for ILI30, derived by joining the inverse SKI
+>  (_ski-pwn-si-flat.txt_) with the GWA-ILI _ili-map-pwn30.tab_ file
+>  retrieved from [GWA/ILI](https://github.com/globalwordnet/ili)
 
 
-3.3 Output files
+### 3.2 SKI tools
+
+First type "_make all_" to set executable permissions for these bash scripts:
+
+* _wn2ski_
+>  Builds the Sense Key Index from the original WordNet  files,
+>  retrieved from [Wordnetcode](http://wordnetcode.princeton.edu). These files are expected
+>  to be found in local subdirectories named _dict-WordnetVersion.Number_,
+>  ranging from _dict-1.5/index.sense_ up to _dict-3.1.1/index.sense_.
+>  The latest WordNet version (2012) was retrieved from
+>  [WordNet 3.1.1 for SQL](http://wordnetcode.princeton.edu/wn_for_sql.tar.gz).
+
+* _pwn2maps_
+>  Generates synset offset mappings between all the WordNet versions from ski-pwn-sets.txt
+
+* _pwn2flat_
+>  Generates the flat text relation file _ski-pwn-flat.txt_,
+>  between all synsets in all WordNet versions and their sense keys,
+>  and the inverse relation (_ski-pwn-si-flat.txt_, and _ski-pwn-si-sets.txt_).
+>  Also, outputs this relation as tab-separated 4-tuples (_ski-pwn-flat.tab_),
+>  designed for compatibility with the MCR.
+>  Also, outputs this relation in Prolog format (_ski-pwn-flat.pl_),
+>  designed for compatibility with the Prolog version of PWN.
+>  Additionally, produce a mapping from each sense key
+>  to its last known WordNet version (_ski-pwn-last_).
+
+* _ili2map_
+>  (runs _pwn2flat_ first, to generate the needed _ski-pwn-flat.txt_ and _ski-pwn-last.txt_ databases)
+>  Maps ILI-30 ids to all Princeton WordNet versions
+>  Maps ILI-30 ids to their last known Princeton WordNet version
+
+* _mcr2free_
+>  Generates Freeling sense databases from MCR data
+
+
+### 3.3 Output files
 
 For your convenience, this release also includes all the output produced
 by running the SKI-tools, compressed with gzip:
 
-- ski-pwn-flat.txt.gz: the flat text version of ski-pwn-sets.txt
-- ski-pwn-si-flat.txt.gz: the same, inversed: map from synsets to sense keys
-- ski-pwn-si-sets.txt.gz: the previous, as sets: map from synsets to sets of sense keys
-- ski-pwn-flat.tab.gz: pwn-flat as tab-separated 4-tuples
-- ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
-- ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
-- ski-freeling.tar.gz: senses30.src databases for Freeling
-- ski-ili.tar.gz: ILI mappings
-- ski-mappings-pwn1.tar.gz: mappings from PWN versions 1.x to all later versions
-- ski-mappings-pwn2.tar.gz: mappings from PWN versions 2.x and 3.x to all later versions
+* ski-pwn-flat.txt.gz: the flat text version of ski-pwn-sets.txt
+* ski-pwn-si-flat.txt.gz: the same, inversed: map from synsets to sense keys
+* ski-pwn-si-sets.txt.gz: the previous, as sets: map from synsets to sets of sense keys
+* ski-pwn-flat.tab.gz: pwn-flat as tab-separated 4-tuples
+* ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
+* ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
+* ski-freeling.tar.gz: senses30.src databases for Freeling
+* ski-ili.tar.gz: ILI mappings
+* ski-mappings-pwn1.tar.gz: mappings from PWN versions 1.x to all later versions
+* ski-mappings-pwn2.tar.gz: mappings from PWN versions 2.x and 3.x to all later versions
 
 
-4 References
+## 4. References
 
-Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central
-Repository version 3.0: upgrading a very large lexical knowledge
-base. In Proceedings of the Sixth International Global WordNet
-Conference (GWC=E2=80=9912). Matsue, Japan. January, 2012.
+* Fellbaum, C.: _WordNet, An Electronic Lexical Database_. MIT Press, Cambridge, 1998.
+
+* Gonzalez-Agirre, A., Laparra, E., Rigau, G.: _Multilingual central repository version 3.0_: 
+upgrading a very large lexical knowledge base. In: Proceedings of the Sixth
+International Global WordNet Conference (GWC2012). Matsue, Japan, 2012.
+
+* Kafe E.: _How Stable are WordNet Synsets?_.
+In: Proceedings of the LDK 2017 Workshops: OntoLex, TIAD and Challenges for Wordnets.
+Galway, Ireland, 2017. [PDF](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf)
+
+* WordNet-team: Senseidx(5wn) manual page. In: WordNet manual. Princeton University, 2010.
+[HTML](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html)
