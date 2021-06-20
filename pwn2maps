@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://github.com/ekaf/ski/pwn2maps
-# (c)2017 Eric Kafe, CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+# (c)2017-21 Eric Kafe, CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 
 LC_ALL=C
 
