@@ -94,9 +94,6 @@ First type "_make all_" to set executable permissions for these bash scripts:
 >  Maps ILI-30 ids to all Princeton WordNet versions
 >  Maps ILI-30 ids to their last known Princeton WordNet version
 
-* _mcr2free_
->  Generates Freeling sense databases from MCR data
-
 
 ### 3.3 Output files
 
@@ -109,7 +106,6 @@ by running the SKI-tools, compressed with gzip:
 * ski-pwn-flat.tab.gz: pwn-flat as tab-separated 4-tuples
 * ski-pwn-flat.pl.gz: Prolog version of the ski-flat relation, as triples
 * ski-pwn-last.txt.gz: mapping from sense keys to their last known synset offset
-* ski-freeling.tar.gz: senses30.src databases for Freeling
 * ski-ili.tar.gz: ILI mappings
 * ski-mappings-pwn1.tar.gz: mappings from PWN versions 1.x to all later versions
 * ski-mappings-pwn2.tar.gz: mappings from PWN versions 2.x and 3.x to all later versions
