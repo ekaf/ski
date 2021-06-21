@@ -52,6 +52,12 @@ Princeton WordNet distribution.
 >  derived from the corresponding Princeton WordNet _index.sense_ files,
 >  retrieved from [Wordnetcode](http://wordnetcode.princeton.edu)
 
+* _ski-violations.txt_
+>  mapping of the sense key violations found in Kafe, E. (2018):
+>  [_Persistent semantic identity in WordNet_](https://doi.org/10.11649/cs.1717)
+>  This mapping handles a small number of accidental cases, where a sense key
+>  changed meaning during a WordNet update.
+
 * _ski-mcr30-2016.txt_
 >  sense key index for MCR30-2016, derived by joining the inverse SKI
 >  (_ski-pwn-si-flat.txt_) with the latest MCR "_variant_" files, retrieved
@@ -64,8 +70,6 @@ Princeton WordNet distribution.
 
 
 ### 3.2 SKI tools
-
-First type "_make all_" to set executable permissions for these bash scripts:
 
 * _wn2ski_
 >  Builds the Sense Key Index from the original WordNet  files,
@@ -119,8 +123,7 @@ by running the SKI-tools, compressed with gzip:
 upgrading a very large lexical knowledge base. In: Proceedings of the Sixth
 International Global WordNet Conference (GWC2012). Matsue, Japan, 2012.
 
-* Kafe, E.: [_How Stable are WordNet Synsets?_](http://ceur-ws.org/Vol-1899/CfWNs_2017_proc1-paper_1.pdf).
-In: Proceedings of the LDK 2017 Workshops: OntoLex, TIAD and Challenges for Wordnets.
-Galway, Ireland, 2017.
+* Kafe, E. (2018): [_Persistent semantic identity in WordNet_](https://doi.org/10.11649/cs.1717).
+In: Cognitive Studies | Études cognitives,2018(18).
 
 * WordNet-team: [_Senseidx(5wn)_](http://wordnet.princeton.edu/wordnet/man/senseidx.5WN.html). In: WordNet manual. Princeton University, 2010.

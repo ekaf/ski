@@ -1,3 +1,7 @@
+Added _ski-violations.txt_: a mapping of sense key violations,
+i. e. a small number of accidental cases, where a sense key
+changed meaning during a WordNet update.
+
 Corrected the version name of the WordNet 1.5SC release
 from October 1995. This was the first fully "coherent"
 version, with only unique sense keys.
