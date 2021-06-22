@@ -1,0 +1,24 @@
+#!/bin/bash
+# https://github.com/ekaf/ski/mcr2free
+# (c)2017-21 Eric Kafe, CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+
+LC_ALL=es_ES.utf8
+
+# WordNet version:
+wnv=30
+# MCR version:
+mcrv=mcr$wnv-2016
+
+echo -n Making Freeling directories "... "
+od=freeling_data
+mkdir $od
+for lang in ca en es eu gl pt
+do
+mkdir $od/$lang
+done
+echo OK
+
+echo -n Making Freeling sense databases "... "
+cat ski-$mcrv.txt.gz|gunzip|awk -f mcr2free.awk v=$v od=$od
+tar cf - $od | gzip > $od-$mcrv.tar.gz
+echo OK

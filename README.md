@@ -1,7 +1,7 @@
 # Sense Key Index (SKI) for inter-operability between WordNet-related projects
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
-2017 [Eric Kafe](https://github.com/ekaf)
+2017-21 [Eric Kafe](https://github.com/ekaf)
 
 Ongoing work: This is a pre-release version, please see the CHANGES.md file.
 
@@ -98,6 +98,9 @@ Princeton WordNet distribution.
 >  Maps ILI-30 ids to all Princeton WordNet versions
 >  Maps ILI-30 ids to their last known Princeton WordNet version
 
+* _mcr2free_
+>  Generates Freeling sense databases from MCR data
+
 
 ### 3.3 Output files
 
@@ -113,6 +116,7 @@ by running the SKI-tools, compressed with gzip:
 * ski-ili.tar.gz: ILI mappings
 * ski-mappings-pwn1.tar.gz: mappings from PWN versions 1.x to all later versions
 * ski-mappings-pwn2.tar.gz: mappings from PWN versions 2.x and 3.x to all later versions
+* freeling_data-mcr30-2016.tar.gz: senses30.src databases for Freeling
 
 
 ## 4. References
